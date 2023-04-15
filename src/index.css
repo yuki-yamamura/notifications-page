@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  html {
+    @apply h-full bg-veryLightGrayishBlue text-sm text-darkGrayishBlue sm:text-base;
+  }
+
+  body {
+    @apply m-auto flex min-h-full max-w-3xl items-center;
+  }
+}
+
 @layer components {
   .unread {
     @apply after:text-red after:content-['●'];
