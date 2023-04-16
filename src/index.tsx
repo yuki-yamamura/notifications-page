@@ -9,7 +9,11 @@ const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement,
 );
 
-void worker.start();
+void worker.start({
+  serviceWorker: {
+    url: './mockServiceWorker.js',
+  },
+});
 
 root.render(
   <React.StrictMode>
